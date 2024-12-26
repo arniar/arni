@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <!-- Logo Section -->
+      <div class="logo-section">
+        <img src="image/logo.png" alt="Logo">
+      </div>
+
+      <!-- Image Section -->
+      <div class="image-section">
+        <img src="image/login image.jpg" alt="Sign Up Image">
+      </div>
+
+      <!-- Form Section -->
+      <div class="form-section">
+        <h2>Sign Up</h2>
+        <form action="/submit" method="POST" id="form">
+          <!-- Name Input -->
+          <input type="text" name="name" placeholder="Full Name" required class="" id="fullName">
+          <p class="validation iValid" id="fullNameMessage"></p>
+
+          <!-- Email Input -->
+          <input type="text" name="email-or-phone" placeholder="Email or Phone Number" id="emailOrPhone" class="" required>
+          <p class="validation iValid" id="emailOrPhoneMessage"></p>
+
+          <!-- Password Input -->
+          <div class="password-wrapper">
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <i class="fas fa-eye" id="togglePassword"></i>
+          </div>
+          <p class="validation iValid" id="passwordMessage"></p>
+
+          <!-- Confirm Password Input -->
+          <div class="password-wrapper">
+            <input type="password" name="confirm-password" placeholder="Confirm Password" id="passwordConfirm" required>
+            <i class="fas fa-eye" id="togglePasswordConfirm"></i>
+          </div>
+          <p class="validation iValid" id="passwordConfirmMessage"></p>
+
+          <!-- Submit Button -->
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Terms & Privacy Links -->
+        <div class="form-links">
+          <span>By signing up, you agree to our</span>
+          <a href="/terms">Terms of Service</a>
+          <span>and</span>
+          <a href="/privacy">Privacy Policy</a>
+        </div>
+
+        <!-- Social Login Buttons -->
+        <div class="social-login">
+          <p>Or sign up with</p>
+          <button class="google">
+            <i class="fab fa-google"></i> Google
+          </button>
+          <button class="facebook">
+            <i class="fab fa-facebook"></i> Facebook
+          </button>
+        </div>
+
+        <!-- Link to Login Page -->
+        <div class="login-link">
+          <p>Already have an account? <a href="/login">Log in here</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
